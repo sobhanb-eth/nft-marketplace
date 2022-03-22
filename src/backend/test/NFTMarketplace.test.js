@@ -44,7 +44,7 @@ describe("NFTMarketplace", function(){
             expect(await nft.tokenURI(2)).to.equal(URI);
         })
     }) 
-    describe("Minting NFTs", function () {
+    describe("Making marketplace items", function () {
         beforeEach(async function () {
             // addr1 mints an nft
             await nft.connect(addr1).mint(URI)
